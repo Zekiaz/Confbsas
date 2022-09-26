@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+  }
+body{
+    font-size: 1.10em;
+    font-family: 'Lato' ,serif;
+    margin: 0;
+    scroll-behavior: smooth;
+	width:100%vw;
+}
+.txtright{
+    text-align: right;
+    word-wrap: break-word;
+    line-height: 1.6em;
+}
+/*topnavbar*/
+div.linktop ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 2.6em;
+    overflow: hidden;
+    background-color: rgb(40, 40, 40);
+    position: fixed;
+    top: 0;
+    z-index: 8;
+}
+.linktop li{
+    float: right;
+}
+li.left{
+    float: left;
+}
+.linktop a{
+    display: block; 
+    color: rgb(241, 237, 237);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 5px;
+    margin-left:5px;
+    height: 2.6em;
+}
+.active{
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+#ticket{
+    color: greenyellow;
+}
+#ticket:hover{
+    background-color: green;
+    color: white;
+}
+li a:hover{
+    background-color: black;
+}
+#topnavimg{
+    width: 90px;
+    height: 3em;
+    margin:0;
+    padding: 0;
+    overflow:hidden;
+    vertical-align: 50%;
+}
+.title{
+    font-size: large;
+    color: whitesmoke;
+    padding: 0.65em;
+}
+@media screen and (max-width: 1200px) {
+    body{font-size: 1.5vw;}
+}
+@media screen and (max-width: 800px) {
+    .linktop li {float: none;}
+    body{font-size: 0.9em;}
+    li.left {float: none; text-align: center;}
+    div.linktop ul{ position:static; height:50%;}
+    .linktop a{ margin: 0;}
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*INTRO*/
+.txtcenter{
+    text-align: center;
+}
+.container{
+        position: relative;
+        text-align: center;
+        background-color: black;
+        width: 100%;
+        padding: 0;
+        margin:0;
+        height: 500px;
+        overflow: hidden;
+}
+#ba1{
+    width: 100%;
+    height: 600px;                                                                                                                                                                                                                                                                                                          
+    padding-bottom: 50px;
+    opacity: 0.3;
+    z-index: -2;
+}
+.textimg{
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    z-index: 1;
+    width: 45%;
+    padding: 0px;
+    color: white;
+}
+.boxbutton{
+    position: absolute;
+    top: 75%;
+    right: 15%;
+    z-index: 1;
+    padding: 0px;
+    color: white;
+    font-weight: bold;
+}
+.boxbutton ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+.boxbutton li{
+    float:left;
+}
+.buttonimg:link, .buttonimg:visited{
+    background-color:rgb(40, 40, 40);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid white;
+    display: inline-block;
+}
+.buttonimg:hover, .buttonimg:active{
+    background-color: black;
+}
+#retickets:link, #retickets:visited{
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin:0px 30px;
+    border-radius: 8px;
+    border: 2px solid black;
+    display: inline-block
+}
+#retickets:hover, #retickets:active{
+    background-color: greenyellow;
+    color: black;
+}
+
+@media screen and (max-width: 800px) {
+    .boxbutton{font-size: 2.5vw; position: absolute; bottom: 10%;}
+    .titleimg{font-size: 5.5vw; position: absolute; top: 5%;  right:0; width: 100%; padding: 15px; margin: 0px 10px;}
+    .textimg {font-size: 2.5vw; position: absolute; top:20%; right:0; width: 100%; padding: 15px; margin:10px;}
+    .buttonimg:link, .buttonimg:visited{margin: 20px;}
+    #retickets:link, #retickets:visited{margin: 20px 15px;}
+    .textright{
+    width:100%;
+    text-align: center;
+    word-wrap: break-word;
+}
+}
+/*ORADORES*/
+.thin{
+    font-weight: 150;
+}
+b{
+    font-weight: bolder;
+}
+.row{
+    width: 100%;
+}
+.row1{
+    margin: 0px 150px;
+}
+.card img{
+    width: 100%;
+}
+div.column{
+    float: left;
+    width:33.33%;
+    margin-bottom: 16px;
+    padding: 0px 10px;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+.card img{
+    height: 300px;
+}
+.cardconteiner{
+    padding: 0px 10px 10px 10px;
+    height: 300px;
+}
+.java, .react, .negocios, .startup{
+    border-radius: 5px;
+    padding: 3px;
+    margin: 4px;    
+}
+.java{
+    background-color: rgb(255, 166, 0);
+    color:black;
+}
+.react{
+    background-color: lightseagreen;
+    color: white;
+}
+.negocios{
+    background-color: rgb(46, 44, 44);
+    color: white;
+}
+.startup{
+    background-color: crimson;
+    color: white;
+}
+@media screen and (max-width: 800px) {
+    div.column {
+    width: 100%;
+    display: block;
+    float: none;
+}
+    .row1{margin: 0px;}
+}
+
+/*Honululu*/
+#honolulu{
+    max-height:400px;
+    float: left;
+    margin: 0px 15px 0px 0px;
+    padding: 0;
+    border-right: 1px solid white;
+}
+.column100 img{
+    width: 50%;
+    max-height: 666px;
+}
+.column100{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(40, 40, 40); 
+    color: white;
+    border:1px solid white;
+}
+#more{
+    font-weight: bold;
+}
+@media screen and (max-width: 800px) {
+    #honolulu{
+        float: none;
+        width:100%;
+        margin:0px 0px 10px 0px;
+        border-bottom: 1px solid white;
+        border-right: 0px;
+    }
+    .col50txt{
+        padding: 15px;
+    }
+}
+/*Form*/
+.fcontainer{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.frow{
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+.column50{
+    width: 50%;
+    float:left;
+    margin: 0px;
+    padding: 0px 10px;
+}
+.column50 input{
+    font: inherit;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+}
+.frow textarea{
+    font: inherit;
+    resize: vertical;
+    height: 100px;
+    width: 100%;
+    border-radius: 6px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptxt {
+    visibility: hidden;
+    width: 300%;
+    background-color: rgb(245, 209, 141);
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;  
+    bottom: 150%;
+    right:1%;
+    z-index: 1;
+  }
+
+  .tooltip:hover .tooltiptxt {
+    visibility: visible;
+  }
+small{
+    color: grey;
+    text-align: left;
+}
+input[type=submit]{
+    width: 100%;
+    padding: 11px;
+    background-color: rgb(110, 194, 54);
+    color: white;
+    border-radius: 6px;
+    border: 2px solid white;
+}
+input[type=submit]:hover{
+    color: black;
+    border-color: black;
+}
+
+@media screen and (max-width: 800px) {
+    .column50{
+        float: none;
+        margin-bottom: 5px;
+        width: 80%;
+    }
+    .frow{width:80%;}
+	.tooltip .tooltiptxt {
+		margin-left: 0;
+	}
+}
+
+/*Footer*/
+.pcointainer{
+    width: 100%;
+    margin-top: 20px;
+}
+.pcointainer ul{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    height: 6em;
+    z-index: 3;
+    background-image: linear-gradient(to right, rgba(28,54,67,255), rgba(30,83,114,255));
+}
+.pcointainer li{
+   float: left;
+   width: 12%;
+}
+.pcointainer li :first-of-type{
+    margin-left: 5em;
+}
+.pcointainer a{
+    display: inline-block; 
+    color: gainsboro;
+    text-align: center;
+    text-decoration: none;
+    padding: 1.5em;
+    margin: 0%;
+    height: 6em;
+    width: 100%;
+}
+@media screen and (max-width: 1000px) {
+    .pcointainer a{
+        float:none; 
+        width:100%;
+        text-align:center;
+        margin: 0;
+        height: 2em;
+        padding: 2px;
+    }
+    .pcointainer ul{position:static; height:50%;width:100%;}
+    .pcointainer li{float: none; width: 100%;}
+    .pcointainer li :first-of-type{margin-left: 0;}
+}

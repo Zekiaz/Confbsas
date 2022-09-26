@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> Conferencias</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="img/codoacodo.png">
+        <link rel="stylesheet" href="css/stylesheet.css" type="text/css">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Manrope&family=Sora&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body><!--8 columnas-->
+        <div class="linktop">
+            <ul>
+                <li class="left"><img id="topnavimg" src="img/codoacodo.png"></li>
+                <li class="left title">Conferencia Bs As</li>
+                <li><a id="ticket" href="tickets.html">Comprar tickets</a></li>
+                <li><a href="index.html#beorador">Conviertete en orador</a></li>
+                <li><a href="index.html#lugar">El lugar y la fecha</a></li>
+                <li><a href="index.html#oradores">Los oradores</a></li>
+                <li><a href="#home" class="active">La conferencia</a></li> 
+            </ul>   
+        </div>
+
+
+        <div class="clearfix container">
+            <img id=ba1 src="img/ba1.jpg">
+            <div class="textimg txtright">
+                <h1><b>Conferencia Bs As</b></h1>
+                <p>Llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad 
+                    el conocimiento y experiencia de los expertos que están creando el futuro de Internet.
+                    Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores
+                    de primer nivel que tenemos para ti. Te esperamos!</p> 
+            </div>
+            <div class="boxbutton"> 
+            <ul>
+                <li><a class= "buttonimg" href="#beorador">Quiero ser orador!</a></li>
+                <li><a id="retickets"href="tickets.html">Comprar tickets</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="row txtcenter clearfix"> 
+               <a name="oradores"> <h3 class="thin">CONOCE A LOS</h3></a>
+              
+               <h1><b> ORADORES</b></h1>
+        </div>
+        <div class="row1 clearfix">
+            <div class="column">
+                <div class="card">
+                    <img src="img/steve.jpg" alt="Steve Jobs">
+                    <div class="cardconteiner">
+                        <p></p>
+                        <span class="java"><b>Javascript</b></span><span class="react"><b>React</b></span>
+                        <h2>Steve Jobs</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, culpa! Dolorem odit saepe iste consequuntur quibusdam, reiciendis, temporibus, illo cum accusamus ut recusandae placeat? Aliquid molestiae laboriosam enim et labore?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="img/bill.jpg" alt="Bill Gates">
+                    <div class="cardconteiner">
+                        <p></p>
+                        <span class="java"><b>Java</b></span><span class="react"><b>React</b></span>
+                        <h2>Bill Gates</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, culpa! Dolorem odit saepe iste consequuntur quibusdam, reiciendis, temporibus, illo cum accusamus ut recusandae placeat? Aliquid molestiae laboriosam enim et labore?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="img/ada.jpeg" alt="Ada Lovelace">
+                    <div class="cardconteiner">
+                        <p></p>
+                        <span class="negocios"><b>Negocios</b></span><span class="startup"><b>Startups</b></span>
+                        <h2>Ada Lovelace</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, culpa! Dolorem odit saepe iste consequuntur quibusdam, reiciendis, temporibus, illo cum accusamus ut recusandae placeat? Aliquid molestiae laboriosam enim et labore?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix" id="lugar" >
+            <div class="column100 clearfix">
+                <img src="img/honolulu.jpg" alt="Honolulu"id="honolulu">
+                <h1 class="col50txt">Buenos Aires - Octubre</h1>
+                <p class="col50txt"> Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulues la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie)</p>
+                <br>
+                <a href="https://es.wikipedia.org/wiki/Honolulu" class="buttonimg"id="more">Conocé más</a>
+            </div>
+        </div>
+        <div class="row clearfix txtcenter">
+            <h3 id="beorador">CONVIERTETE EN UN</h3>
+            <h1>ORADOR</h1>
+            <p>Anótate como orador para dar una 
+                <span class="tooltip">charla ignite<di class="tooltiptxt"> Ignite consiste en una presentación de la idea central de un proyecto o visión en cinco minutos. </span>
+            .Cuéntanos de qué quieres hablar!</p>            
+        </div>
+        <div>
+            
+        <div class="fcontainer">
+            <form>
+                    <div class="frow clearfix">
+                    <div class="column50">
+                        <input type="text" name="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="column50">
+                        <input type="text" name="apellido" placeholder="Apellido">
+                    </div> 
+                    </div>
+                    <div class="frow">
+                        <textarea placeholder="Sobre que quieres hablar?"></textarea><br>
+                        <small>Recuerda incluir un título para tu charla</small>
+                        <p></p>
+                        <input type="submit"value="Enviar"id="submit">
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+        <div class="pcointainer" id="grad">
+                <ul>
+                    <li><a>Preguntas Frecuentes</a></li>
+                    <li><a>Contáctanos</a></li>
+                    <li><a>Prensa</a></li>
+                    <li><a>Conferencias</a></li>
+                    <li><a>Términos y condiciones</a></li>
+                    <li><a>Privacidad</a></li>
+                    <li><a>Estudiantes</a></li>
+                </ul>
+        </div>
+    </body>
+</html>
