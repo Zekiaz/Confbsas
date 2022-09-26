@@ -2,16 +2,18 @@
     box-sizing: border-box;
   }
 body{
-    font-size: 1.10em;
+    font-size: 1.05em;
     font-family: 'Lato' ,serif;
     margin: 0;
-    scroll-behavior: smooth;
 	width:100%vw;
 }
 .txtright{
     text-align: right;
-    word-wrap: break-word;
     line-height: 1.6em;
+	overflow-wrap: break-word;
+}
+.txtcenter{
+	text-align: center;
 }
 /*topnavbar*/
 div.linktop ul{
@@ -165,7 +167,7 @@ li a:hover{
     .textimg {font-size: 2.5vw; position: absolute; top:20%; right:0; width: 100%; padding: 15px; margin:10px;}
     .buttonimg:link, .buttonimg:visited{margin: 20px;}
     #retickets:link, #retickets:visited{margin: 20px 15px;}
-    .textright{
+    .txtright{
     width:100%;
     text-align: center;
     word-wrap: break-word;
