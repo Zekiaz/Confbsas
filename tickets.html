@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> Conf BsAs</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="img/codoacodo.png">
+        <link rel="stylesheet" href="css/tickets.css" type="text/css">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Manrope&family=Sora&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="linktop">
+            <ul>
+                <li class="left title">Conferencia Bs As</li>
+                <li><a id="ticket" class="active" href="tickets.html">Comprar tickets</a></li>
+                <li><a href="index.html#beorador">Conviertete en orador</a></li>
+                <li><a href="#lugar">El lugar y la fecha</a></li>
+                <li><a href="index.html#oradores">Los oradores</a></li>
+                <li><a href="index.html" >La conferencia</a></li> 
+            </ul>   
+        </div>
+
+        <div class="row1 clearfix">
+            <div class="column">
+                <div class="card">
+                    <div class="cardconteiner txtcenter" id="e_azul">
+                        <p></p>
+                        <h2>Estudiante</h2>
+                        <p>Tienen un descuento</p><br>
+                        <p><b>80%</b></p>
+                        <small>*presentar documentación</small>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="cardconteiner txtcenter" id="t_turq">
+                        <p></p>
+                        <h2>Trainee</h2>
+                        <p>Tienen un descuento</p><br>
+                        <p><b>50%</b></p>
+                        <small>*presentar documentación</small>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="cardconteiner txtcenter" id="j_amar">
+                        <p></p>
+                        <h2>Junior</h2>
+                        <p>Tienen un descuento</p><br>
+                        <p><b>15%</b></p>
+                        <small>*presentar documentación</small></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row clearfix txtcenter">
+            <h3>VENTA</h3>
+            <h2>VALOR DE TICKET $200</h2>        
+        </div>
+        <div>
+
+        <div class="fcontainer">
+            <form id="formulario">
+                    <div class="frow clearfix">
+                        <div class="fcolumn50">
+                            <input type="text" name="nombre" placeholder="Nombre" autocomplete="on">
+                        </div>
+                        <div class="fcolumn50">
+                            <input type="text" name="apellido" placeholder="Apellido" autocomplete="on">
+                        </div> 
+                    </div>
+                    <div class="frow">
+                        <div class=" fcolumn50 fcolumn100">
+                        <input type="email" id="correo" placeholder="Correo" autocomplete="on">
+                        </div>
+                    </div>
+                    <div class="frow clearfix">
+                        <div class="fcolumn50">
+                            <label for="cantidad">Cantidad</label>  
+                            <input type="text" id="cantidad" placeholder="Ingrese un valor numérico" autocomplete="off">
+                        </div>
+                        <div class="fcolumn50">
+                            <label for="categoria">Categoria<br></label>
+                            <select id="categoria">
+                                <option value="ninguno" selected>Ninguno</option>
+                                <option value="estudiante">Estudiante</option>
+                                <option value="trainee">Trainee</option>
+                                <option value="junior">Junior</option>
+                            </select>
+                        </div> 
+                    </div>
+                    <div class="frow">
+                        <div class="columnalert">
+                            <p> Total a pagar: $<span id="total$"></span></p>
+                        </div>
+                    </div>
+                </div>
+                    
+
+                    <div class="frow clearfix">
+                        <div class="fcolumn50">
+                            <input type="button" id="borra" onclick="borrar()" value="Borrar" ></input>
+                        </div>
+                        <div class="fcolumn50">
+                            <input type="submit" id="resumen" onclick="suma()" value="Resumen"></input>
+                        </div>
+                </div>
+            </form>
+            </div>
+        </div>
+
+        <div class="pcointainer" id="grad">
+                <ul>
+                    <li><a>Preguntas Frecuentes</a></li>
+                    <li><a>Contáctanos</a></li>
+                    <li><a>Prensa</a></li>
+                    <li><a>Conferencias</a></li>
+                    <li><a>Términos y condiciones</a></li>
+                    <li><a>Privacidad</a></li>
+                    <li><a>Estudiantes</a></li>
+                </ul>
+        </div>
+        <script type="text/javascript" src="js/tickets.js" ></script>
+    </body>
+</html>

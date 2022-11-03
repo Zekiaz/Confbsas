@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.05em;
+    font-family: 'Lato' ,serif;
+    margin: 0;
+	width:100%;
+}
+.txtright{
+    text-align: right;
+    line-height: 1.6em;
+	overflow-wrap: break-word;
+}
+.txtcenter{
+	text-align: center;
+}
+/*topnavbar*/
+div.linktop ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 2.6em;
+    overflow: hidden;
+    background-color: rgb(40, 40, 40);
+    position: static;
+    top: 0;
+    z-index: 8;
+}
+.linktop li{
+    float: right;
+}
+li.left{
+    float: left;
+}
+.linktop a{
+    display: block; 
+    color: rgb(241, 237, 237);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 5px;
+    margin-left:5px;
+    height: 2.6em;
+}
+.active{
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+#ticket{
+    color: greenyellow;
+}
+#ticket:hover{
+    background-color: green;
+    color: white;
+}
+li a:hover{
+    background-color: black;
+}
+#topnavimg{
+    width: 90px;
+    height: 3em;
+    margin:0;
+    padding: 0;
+    overflow:hidden;
+    vertical-align: 50%;
+}
+.title{
+    font-size: large;
+    color: whitesmoke;
+    padding: 0.65em;
+}
+@media screen and (max-width: 1200px) {
+    body{font-size: 1.5vw;}
+}
+@media screen and (max-width: 800px) {
+    .linktop li {float: none;}
+    body{font-size: 0.9em;}
+    li.left {float: none; text-align: center;}
+    div.linktop ul{ position:static; height:50%;}
+    .linktop a{ margin: 0;}
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*cards*/
+.thin{
+    font-weight: 150;
+}
+b{
+    font-weight: bolder;
+}
+.row{
+    width: 100%;
+}
+.row1{
+    width: 70%;
+    margin: 20px auto 0px;
+}
+div.column{
+    float: left;
+    width:33.33%;
+    padding: 0px 5px;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+.cardconteiner{
+    padding: 10px;
+}
+#e_azul{
+    border: 1px solid #047dfe;
+}
+#t_turq{
+    border: 1px solid #4bb7c8;
+}
+#j_amar{
+    border: 1px solid #ffc10a;
+}
+small{
+    color: grey;
+    text-align: left;
+}
+@media screen and (max-width: 800px) {
+    .row1{margin: auto;}
+}
+
+/*Form*/
+.fcontainer{
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+}
+.frow{
+    width: 70%;
+    margin: auto;
+    padding: 5px;
+}
+.fcolumn50{
+    width: 50%;
+    float:left;
+    margin: 0px;
+    padding: 0px 10px;
+}
+.fcolumn50 input{
+    font: inherit;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+}
+.fcolumn100{
+    width: 100%;
+}
+
+select{
+    font: inherit;
+    width: 100%;
+    border-radius: 8px solid black;
+    padding: 8px;
+}
+
+.columnalert{
+    background-color: #cce5ff;
+    color: #1f516e;
+    border-radius: 10px;
+    border: 2px solid #1f516e;
+    margin: 8px;
+    padding-left: 20px;
+}
+
+label{
+    margin: 2px;
+}
+input[type=submit], input[type=button]{
+    width: 100%;
+    padding: 11px;
+    background-color: rgb(110, 194, 54);
+    color: white;
+    border-radius: 6px;
+    border: 2px solid white;
+}
+input[type=submit]:hover, input[type=button]:hover{
+    color: black;
+    border-color: black;
+}
+
+
+@media screen and (max-width: 800px) {
+    .fcolumn50{
+        float: none;
+        margin-bottom: 5px;
+        width: 80%;
+    }
+    .frow{width:80%;}
+}
+/*Footer*/
+.pcointainer{
+    width: 100%;
+    margin-top: 20px;
+}
+.pcointainer ul{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    height: 6em;
+    z-index: 3;
+    background-image: linear-gradient(to right, rgba(28,54,67,255), rgba(30,83,114,255));
+}
+.pcointainer li{
+   float: left;
+   width: 12%;
+}
+.pcointainer li :first-of-type{
+    margin-left: 5em;
+}
+.pcointainer a{
+    display: inline-block; 
+    color: gainsboro;
+    text-align: center;
+    text-decoration: none;
+    padding: 1.5em;
+    margin: 0%;
+    height: 6em;
+    width: 100%;
+}
+@media screen and (max-width: 1000px) {
+    .pcointainer a{
+        float:none; 
+        width:100%;
+        text-align:center;
+        margin: 0;
+        height: 2em;
+        padding: 2px;
+    }
+    .pcointainer ul{position:static; height:50%;width:100%;}
+    .pcointainer li{float: none; width: 100%;}
+    .pcointainer li :first-of-type{margin-left: 0;}
+}
