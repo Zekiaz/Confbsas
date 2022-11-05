@@ -130,6 +130,7 @@ small{
 }
 @media screen and (max-width: 800px) {
     .row1{margin: auto;}
+    div.column{width: 100%;}
 }
 
 /*Form*/
